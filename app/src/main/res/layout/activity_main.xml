@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="From"
+            android:textSize="15sp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+
+            ></TextView>
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="To"
+
+            android:textSize="15sp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+
+            ></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp">
+
+        <Spinner
+            android:id="@+id/from"
+            android:layout_centerHorizontal="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+
+            >
+
+        </Spinner>
+
+        <Spinner
+            android:id="@+id/to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            >
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fromname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:layout_margin="20dp"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/actualvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Ammount"
+        android:text="0"
+        android:textSize="20sp"
+        android:inputType="numberDecimal"
+        android:layout_margin="20dp"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Convert"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:onClick="convert"
+        android:backgroundTint="@color/red"
+        ></Button>
+
+    <TextView
+        android:id="@+id/resultname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/resultvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        ></TextView>
+
+<!--    </Spinner>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+</LinearLayout>
